@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="true">
+    <folder>/public/AdditionalResources/ReportWorkbook</folder>
+    <name>JRS_JRIO_workBook2</name>
+    <version>0</version>
+    <label>JRS+JRIO_workBook2</label>
+    <description></description>
+    <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+    <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>main_jrxml</name>
+            <version>0</version>
+            <label>Main jrxml</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:13.844-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <dataSource>
+        <uri>/public/AdditionalResources/DataSources/PostgresJDBC</uri>
+    </dataSource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="JRS_JRIO_workBook_toc.jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>JRS_JRIO_workBook_toc.jrxml</name>
+            <version>0</version>
+            <label>JRS+JRIO_workBook_toc.jrxml</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="JRS_JRIO_workBook_cover.jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>JRS_JRIO_workBook_cover.jrxml</name>
+            <version>0</version>
+            <label>JRS+JRIO_workBook_cover.jrxml</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="cherry.jpg.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>cherry.jpg</name>
+            <version>0</version>
+            <label>cherry.jpg</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>img</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="wave.png.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>wave.png</name>
+            <version>0</version>
+            <label>wave.png</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>img</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="Cherry_2.jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>Cherry_2.jrxml</name>
+            <version>0</version>
+            <label>Cherry_2.jrxml</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="JRS_JRIO_workBook_backcover.jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/ReportWorkbook/JRS_JRIO_workBook2_files</folder>
+            <name>JRS_JRIO_workBook_backcover.jrxml</name>
+            <version>0</version>
+            <label>JRS+JRIO_workBook_backcover.jrxml</label>
+            <creationDate>2020-11-26T04:10:26.942-08:00</creationDate>
+            <updateDate>2020-09-23T23:14:16.061-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

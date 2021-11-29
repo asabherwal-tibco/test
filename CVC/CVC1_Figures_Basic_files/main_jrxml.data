@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.6.0.beta-v202004090918 using JasperReports Library version 6.11.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CVC1_Figures" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f9392b8a-88a0-4a64-85a0-2934db2dcc62">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.jasperserver.url" value="http://infra-platforms-phase2-8247-mb.k.pfa.jaspersoft.com:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/CVC1_Figures_Basic"/>
+	<property name="net.sf.jasperreports.data.adapter" value="repo:/public/EmptyDataAdapter"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="80" y="60" width="330" height="250" uuid="4cd84f39-b9d7-4266-b413-dac2501610c0"/>
+				<cvc:customvisualization xmlns:cvc="http://www.jaspersoft.com/cvcomponent" xsi:schemaLocation="http://www.jaspersoft.com/cvcomponent http://www.jaspersoft.com/cvcomponent/component.xsd">
+					<cvc:itemProperty name="script" value="figures.min.js"/>
+					<cvc:itemProperty name="css" value="figures.css"/>
+					<cvc:itemProperty name="module" value="figures"/>
+					<cvc:itemProperty name="itemsValue" value="1"/>
+					<cvc:itemProperty name="itemsCount" value="1"/>
+					<cvc:itemProperty name="figure" value="Male"/>
+					<cvc:itemProperty name="customPath" value=""/>
+					<cvc:itemProperty name="fgColor" value="#000000"/>
+					<cvc:itemProperty name="fgOpacity" value="1"/>
+					<cvc:itemProperty name="showBackground" value="true"/>
+					<cvc:itemProperty name="bgColor" value="#0000000"/>
+					<cvc:itemProperty name="bgOpacity" value="0.2"/>
+					<cvc:itemProperty name="rows" value="0"/>
+					<cvc:itemProperty name="columns" value="0"/>
+					<cvc:itemProperty name="maximizeColumnNumber" value="true"/>
+					<cvc:itemProperty name="vAlign" value="top"/>
+					<cvc:itemProperty name="hAlign" value="left"/>
+					<cvc:itemProperty name="hPadding" value="10"/>
+					<cvc:itemProperty name="vPadding" value="10"/>
+				</cvc:customvisualization>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

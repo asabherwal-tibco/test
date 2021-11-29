@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileResource exportedWithPermissions="true" dataFile="EDA.data">
+    <folder>/public/AdditionalResources/BarcodeChart</folder>
+    <name>EDA</name>
+    <version>0</version>
+    <label>EDA</label>
+    <creationDate>2020-11-26T04:10:24.753-08:00</creationDate>
+    <updateDate>2020-09-10T03:38:42.336-07:00</updateDate>
+    <fileType>xml</fileType>
+</fileResource>

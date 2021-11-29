@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.8.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SpiderChart" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0aa97327-7845-4bb0-a26e-72045b31f7cf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterjssgauge.xml"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT employee.employee_id,
+	employee.hire_date,
+	employee.marital_status,
+	employee.last_name,
+	employee.store_id,
+	employee.management_role,
+	employee.department_id,
+	employee.salary,
+	employee.position_title,
+	employee.position_id,
+	employee.first_name,
+	employee.education_level,
+	employee.supervisor_id,
+	employee.end_date,
+	employee.full_name,
+	employee.gender,
+	employee.birth_date
+FROM employee
+LIMIT 10]]>
+	</queryString>
+	<field name="employee_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="employee_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="employee_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="hire_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="hire_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="hire_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="marital_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="marital_status"/>
+		<property name="com.jaspersoft.studio.field.label" value="marital_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="last_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="last_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="store_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="store_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="store_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="management_role" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="management_role"/>
+		<property name="com.jaspersoft.studio.field.label" value="management_role"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="department_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="department_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="department_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="salary" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="salary"/>
+		<property name="com.jaspersoft.studio.field.label" value="salary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="position_title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="position_title"/>
+		<property name="com.jaspersoft.studio.field.label" value="position_title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="position_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="position_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="position_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="first_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="first_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="first_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="education_level" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="education_level"/>
+		<property name="com.jaspersoft.studio.field.label" value="education_level"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="supervisor_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="supervisor_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="supervisor_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="end_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="end_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="end_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="full_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="full_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="full_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="birth_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="birth_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="birth_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="800" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="30" y="10" width="510" height="760" uuid="06e3563c-e882-43e8-b0c3-5e07faee3bb8"/>
+				<sc:spiderChart xmlns:sc="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sc:chartSettings>
+						<chartTitle/>
+						<chartSubtitle/>
+						<chartLegend/>
+					</sc:chartSettings>
+					<sc:spiderDataset>
+						<dataset resetType="Report"/>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{last_name}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{first_name}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{store_id}]]></valueExpression>
+						</categorySeries>
+					</sc:spiderDataset>
+					<sc:spiderPlot isWebFilled="true"/>
+				</sc:spiderChart>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

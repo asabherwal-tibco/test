@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.8.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SpiderChart" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0aa97327-7845-4bb0-a26e-72045b31f7cf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterDomain.xml"/>
+	<property name="ireport.jasperserver.url" value="http://172.17.16.44:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.domainUri" value="/organizations/organization_1/Domains/supermartDomain"/>
+	<parameter name="LoggedInUser" class="com.jaspersoft.jasperserver.api.metadata.user.domain.User" isForPrompting="false"/>
+	<parameter name="LoggedInUsername" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="domain">
+		<![CDATA[<query>
+	<queryFields>
+		<queryField id="employee.employee__employee_id"/>
+		<queryField id="employee.employee__full_name"/>
+		<queryField id="employee.employee__first_name"/>
+		<queryField id="employee.employee__last_name"/>
+		<queryField id="employee.employee__department_description"/>
+		<queryField id="employee.employee__position_title"/>
+		<queryField id="employee.employee__management_role"/>
+		<queryField id="employee.employee__hire_date"/>
+		<queryField id="employee.employee__end_date"/>
+	</queryFields>
+	<queryFilterString> employee.employee__employee_id &lt; 20</queryFilterString>
+</query>]]>
+	</queryString>
+	<field name="employee.employee__employee_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Employee ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Employee ID]]></fieldDescription>
+	</field>
+	<field name="employee.employee__full_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Full Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Full Name]]></fieldDescription>
+	</field>
+	<field name="employee.employee__first_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="First Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[First Name]]></fieldDescription>
+	</field>
+	<field name="employee.employee__last_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Last Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Last Name]]></fieldDescription>
+	</field>
+	<field name="employee.employee__department_description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Department]]></fieldDescription>
+	</field>
+	<field name="employee.employee__position_title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Position"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Position]]></fieldDescription>
+	</field>
+	<field name="employee.employee__management_role" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Management Role"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Management Role]]></fieldDescription>
+	</field>
+	<field name="employee.employee__hire_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="Hire Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[Hire Date]]></fieldDescription>
+	</field>
+	<field name="employee.employee__end_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="End Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Employees"/>
+		<fieldDescription><![CDATA[End Date]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="800" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="30" y="10" width="510" height="760" uuid="4cee2387-4c19-4c49-ab2b-aa6f999e91c8"/>
+				<sc:spiderChart xmlns:sc="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sc:chartSettings>
+						<chartTitle/>
+						<chartSubtitle/>
+						<chartLegend/>
+					</sc:chartSettings>
+					<sc:spiderDataset>
+						<dataset resetType="Report"/>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{employee.employee__department_description}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{employee.employee__last_name}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{employee.employee__employee_id}]]></valueExpression>
+						</categorySeries>
+					</sc:spiderDataset>
+					<sc:spiderPlot isWebFilled="true"/>
+				</sc:spiderChart>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

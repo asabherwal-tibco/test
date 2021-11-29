@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.10.0.beta-v202011250731 using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TibcoMaps" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="886f1168-8f78-4104-a9da-9f9379ebb18d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="EDA"/>
+	<property name="ireport.jasperserver.url" value="http://172.17.18.236:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/AdditionalResources/Maps/JRS_JRIO_TibcoMaps"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="60" y="120" width="400" height="150" uuid="c0d66930-fdb2-4268-a9b9-2fac89fcbc73"/>
+				<c:tibcoMap xmlns:c="http://jaspersoft.com/tibcomaps" xsi:schemaLocation="http://jaspersoft.com/tibcomaps http://jaspersoft.com/schema/tibcomaps.xsd">
+					<c:mapData>
+						<c:item>
+							<c:itemProperty name="latitude" value="37.7833"/>
+							<c:itemProperty name="longitude" value="-122.4167"/>
+							<c:itemProperty name="zoom" value="8"/>
+						</c:item>
+					</c:mapData>
+				</c:tibcoMap>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

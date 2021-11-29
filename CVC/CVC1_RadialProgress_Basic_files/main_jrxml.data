@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.6.0.beta-v202004090918 using JasperReports Library version 6.11.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CVC1_RadialProgress" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9846e097-2d6e-4f7b-b7cd-4f4ce42516b7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.data.adapter" value="repo:/public/EmptyDataAdapter"/>
+	<property name="ireport.jasperserver.url" value="http://infra-platforms-phase2-8247-mb.k.pfa.jaspersoft.com:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/CVC1_RadialProgress_Basic"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="140" y="70" width="340" height="210" uuid="918b6451-b23d-4abc-9c0d-81cd5c923da1"/>
+				<cvc:customvisualization xmlns:cvc="http://www.jaspersoft.com/cvcomponent" xsi:schemaLocation="http://www.jaspersoft.com/cvcomponent http://www.jaspersoft.com/cvcomponent/component.xsd">
+					<cvc:itemProperty name="script" value="radial_progress.min.js"/>
+					<cvc:itemProperty name="css" value="radial_progress.css"/>
+					<cvc:itemProperty name="module" value="radial_progress"/>
+					<cvc:itemProperty name="value" value="90"/>
+					<cvc:itemProperty name="target" value="100"/>
+					<cvc:itemProperty name="valueFormat" value=".1%"/>
+					<cvc:itemProperty name="autoFit" value="true"/>
+					<cvc:itemProperty name="fgColor" value="#000000"/>
+					<cvc:itemProperty name="fgOpacity" value="1"/>
+					<cvc:itemProperty name="showBackground" value="true"/>
+					<cvc:itemProperty name="bgColor" value="#000000"/>
+					<cvc:itemProperty name="bgOpacity" value="0.2"/>
+					<cvc:itemProperty name="ringThickness" value="4.0"/>
+					<cvc:itemProperty name="ringPadding" value="4.0"/>
+					<cvc:itemProperty name="maxRings" value="0"/>
+					<cvc:itemProperty name="hPadding" value="10"/>
+					<cvc:itemProperty name="vPadding" value="10"/>
+					<cvc:itemProperty name="animation" value="true"/>
+				</cvc:customvisualization>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="true">
+    <folder>/public/AdditionalResources/CVC</folder>
+    <name>CVC1_Sparkline</name>
+    <version>1</version>
+    <label>CVC1_Sparkline</label>
+    <description></description>
+    <creationDate>2020-11-26T04:16:57.188-08:00</creationDate>
+    <updateDate>2020-04-12T21:56:33.134-07:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/CVC/CVC1_Sparkline_files</folder>
+            <name>main_jrxml</name>
+            <version>0</version>
+            <label>Main jrxml</label>
+            <creationDate>2020-11-26T04:16:57.188-08:00</creationDate>
+            <updateDate>2020-04-12T21:56:31.722-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="sparkline.min.js.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/CVC/CVC1_Sparkline_files</folder>
+            <name>sparkline.min.js</name>
+            <version>0</version>
+            <label>sparkline.min.js</label>
+            <creationDate>2020-11-26T04:16:57.188-08:00</creationDate>
+            <updateDate>2020-04-12T21:56:33.134-07:00</updateDate>
+            <fileType>xml</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

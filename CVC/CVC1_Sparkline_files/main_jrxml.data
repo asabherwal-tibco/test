@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.6.0.beta-v202004081014 using JasperReports Library version 6.11.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CVC1_Sparkline" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="428818f5-f5a5-4c8e-8521-738d56710aab">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.jasperserver.url" value="http://infra-platforms-phase2-8247-mb.k.pfa.jaspersoft.com:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.jasperserver.report.resource" value="/public/CVC1_Sparkline_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/CVC1_Sparkline"/>
+	<property name="net.sf.jasperreports.data.adapter" value="repo:/public/EmptyDataAdapter"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="70" y="90" width="440" height="250" uuid="e00eddd3-80d8-4c45-84b3-c03dc949f35b"/>
+				<cvc:customvisualization xmlns:cvc="http://www.jaspersoft.com/cvcomponent" xsi:schemaLocation="http://www.jaspersoft.com/cvcomponent http://www.jaspersoft.com/cvcomponent/component.xsd">
+					<cvc:itemProperty name="module" value="sparkline"/>
+					<cvc:itemProperty name="script" value="sparkline.min.js"/>
+					<cvc:itemProperty name="lineColor" value="#000000"/>
+					<cvc:itemProperty name="lineOpacity" value="1"/>
+					<cvc:itemProperty name="lineStroke" value="0.1"/>
+					<cvc:itemProperty name="interpolation" value="basis"/>
+					<cvc:itemProperty name="fillColor" value="#0000FF"/>
+					<cvc:itemProperty name="fillOpacity" value="0.1"/>
+					<cvc:itemProperty name="circleColor" value="#FF0000"/>
+					<cvc:itemProperty name="circleOpacity" value="1"/>
+					<cvc:itemProperty name="circleRadius" value="2"/>
+					<cvc:cvData>
+						<cvc:item>
+							<cvc:itemProperty name="value" value="0"/>
+						</cvc:item>
+						<cvc:item>
+							<cvc:itemProperty name="value" value="0.2"/>
+						</cvc:item>
+						<cvc:item>
+							<cvc:itemProperty name="value" value="0.4"/>
+						</cvc:item>
+						<cvc:item>
+							<cvc:itemProperty name="value" value="0.5"/>
+						</cvc:item>
+						<cvc:item>
+							<cvc:itemProperty name="value" value="1"/>
+						</cvc:item>
+					</cvc:cvData>
+				</cvc:customvisualization>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

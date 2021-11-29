@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.10.0.beta-v202011250731 using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MapsPro" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="162e63e4-3d68-4ee6-8397-2a765a3bdad7">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterjssgauge.xml"/>
+	<property name="ireport.jasperserver.url" value="http://172.17.18.236:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="superuser"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/AdditionalResources/Maps/JRS_JRIO_MapsPro"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT account.account_parent,
+	account.account_description,
+	account.account_rollup,
+	account.custom_members,
+	account.account_id,
+	account.account_type
+FROM account]]>
+	</queryString>
+	<field name="account_parent" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="account_parent"/>
+		<property name="com.jaspersoft.studio.field.label" value="account_parent"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<field name="account_description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="account_description"/>
+		<property name="com.jaspersoft.studio.field.label" value="account_description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<field name="account_rollup" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="account_rollup"/>
+		<property name="com.jaspersoft.studio.field.label" value="account_rollup"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<field name="custom_members" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="custom_members"/>
+		<property name="com.jaspersoft.studio.field.label" value="custom_members"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<field name="account_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="account_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="account_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<field name="account_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="account_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="account_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="account"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="40" y="100" width="400" height="150" uuid="a3aad81f-62a6-4d72-a00a-6b765d6e5d56"/>
+				<fm:map xmlns:fm="http://jaspersoft.com/fusion" xsi:schemaLocation="http://jaspersoft.com/fusion http://jaspersoft.com/schema/fusion.xsd">
+					<fm:mapNameExpression><![CDATA["India"]]></fm:mapNameExpression>
+					<fm:mapDataset>
+						<dataset resetType="Report"/>
+						<fm:entity>
+							<fm:idExpression><![CDATA["Change me!"]]></fm:idExpression>
+							<fm:valueExpression><![CDATA[null]]></fm:valueExpression>
+						</fm:entity>
+					</fm:mapDataset>
+					<fm:shapeData/>
+					<c:markerData xmlns:c="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd"/>
+				</fm:map>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

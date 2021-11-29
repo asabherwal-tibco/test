@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="true">
+    <folder>/public/AdditionalResources/SpiderChart</folder>
+    <name>JRS_JRIO_SpiderChart</name>
+    <version>0</version>
+    <label>JRS+JRIO_SpiderChart</label>
+    <description></description>
+    <creationDate>2020-11-26T04:10:26.992-08:00</creationDate>
+    <updateDate>2020-09-10T02:55:07.494-07:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/SpiderChart/JRS_JRIO_SpiderChart_files</folder>
+            <name>main_jrxml</name>
+            <version>0</version>
+            <label>Main jrxml</label>
+            <creationDate>2020-11-26T04:10:26.992-08:00</creationDate>
+            <updateDate>2020-09-10T02:55:07.494-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <dataSource>
+        <uri>/public/AdditionalResources/DataSources/PostgresJDBC_1</uri>
+    </dataSource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

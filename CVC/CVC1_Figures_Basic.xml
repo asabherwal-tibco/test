@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="true">
+    <folder>/public/AdditionalResources/CVC</folder>
+    <name>CVC1_Figures_Basic</name>
+    <version>1</version>
+    <label>CVC1_Figures_Basic</label>
+    <description></description>
+    <creationDate>2020-11-26T04:17:20.012-08:00</creationDate>
+    <updateDate>2020-04-13T23:58:34.612-07:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/CVC/CVC1_Figures_Basic_files</folder>
+            <name>main_jrxml</name>
+            <version>0</version>
+            <label>Main jrxml</label>
+            <creationDate>2020-11-26T04:17:20.012-08:00</creationDate>
+            <updateDate>2020-04-13T23:58:34.612-07:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="figures.min.js.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/CVC/CVC1_Figures_Basic_files</folder>
+            <name>figures.min.js</name>
+            <version>0</version>
+            <label>figures.min.js</label>
+            <creationDate>2020-11-26T04:17:20.012-08:00</creationDate>
+            <updateDate>2020-04-13T23:58:34.612-07:00</updateDate>
+            <fileType>xml</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="figures.css.data" xsi:type="fileResource">
+            <folder>/public/AdditionalResources/CVC/CVC1_Figures_Basic_files</folder>
+            <name>figures.css</name>
+            <version>0</version>
+            <label>figures.css</label>
+            <creationDate>2020-11-26T04:17:20.012-08:00</creationDate>
+            <updateDate>2020-04-13T23:58:34.612-07:00</updateDate>
+            <fileType>css</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

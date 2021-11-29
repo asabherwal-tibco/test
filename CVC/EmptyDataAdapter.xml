@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileResource exportedWithPermissions="true" dataFile="EmptyDataAdapter.data">
+    <folder>/public/AdditionalResources/CVC</folder>
+    <name>EmptyDataAdapter</name>
+    <version>3</version>
+    <label>EmptyDataAdapter</label>
+    <creationDate>2020-11-26T04:17:40.046-08:00</creationDate>
+    <updateDate>2020-04-13T23:59:51.558-07:00</updateDate>
+    <fileType>xml</fileType>
+</fileResource>
