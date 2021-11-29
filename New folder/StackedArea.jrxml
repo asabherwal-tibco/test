@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.6.0.beta-v202005280826 using JasperReports Library version master-SNAPSHOT-a3b57e579c145f29cbc14b422d497ebdd870a162  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LineChart" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f88be067-b26e-494b-8502-a1f798b6eec3">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="fusion.xml"/>
+	<property name="net.sf.jasperreports.data.adapter" value="fusion.xml"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM 	orders]]>
+	</queryString>
+	<field name="orderid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="orderid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="customerid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="customerid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="employeeid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="employeeid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="orderdate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="orderdate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="requireddate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="requireddate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shippeddate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="shippeddate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipvia" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="shipvia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="freight" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="freight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shipname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipaddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shipaddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipcity" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shipcity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipregion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shipregion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shippostalcode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shippostalcode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="shipcountry" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shipcountry"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="10" width="310" height="43" uuid="6f7b5e26-83a1-4b9e-b617-678c700d782e"/>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA["STACKED AREA CHART"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<summary>
+		<band height="229" splitType="Stretch">
+			<componentElement>
+				<reportElement x="90" y="39" width="400" height="150" uuid="7e5c0689-3701-40b6-bea1-9f036d3cfb54"/>
+				<fc:chart xmlns:fc="http://jaspersoft.com/fusion" xsi:schemaLocation="http://jaspersoft.com/fusion http://jaspersoft.com/schema/fusion.xsd" type="StackedArea">
+					<fc:chartDataset>
+						<dataset resetType="Report"/>
+						<fc:item>
+							<fc:seriesExpression><![CDATA[$F{customerid}]]></fc:seriesExpression>
+							<fc:labelExpression><![CDATA[$F{shipname}]]></fc:labelExpression>
+							<fc:valueExpression><![CDATA[new Double(0)]]></fc:valueExpression>
+						</fc:item>
+					</fc:chartDataset>
+				</fc:chart>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

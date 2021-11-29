@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.10.0.beta-v202104191446 using JasperReports Library version master-SNAPSHOT-545ac4269a25a3be6c4972ae6221379a254b8c4f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="widgets" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1d6cd05-071d-4e6e-bd58-2e233e9b3aae">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterMasterDetails.xml"/>
+	<property name="net.sf.jasperreports.data.adapter" value="/samples/data/fusion.xml"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="265" splitType="Stretch">
+			<componentElement>
+				<reportElement x="231" y="65" width="150" height="200" uuid="fb786964-df98-4ede-85b1-82a72502f181"/>
+				<fw:cylinder xmlns:fw="http://jaspersoft.com/fusion" xsi:schemaLocation="http://jaspersoft.com/fusion http://jaspersoft.com/schema/fusion.xsd">
+					<dataset resetType="Report"/>
+					<fw:valueExpression><![CDATA[new Double(20.0)]]></fw:valueExpression>
+				</fw:cylinder>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>
